@@ -1,0 +1,10 @@
+{
+    "name": "Jekyll Development Environment",
+    "image": "mcr.microsoft.com/devcontainers/ruby:3.1",
+    "features": {
+        "ghcr.io/devcontainers/features/node:1": {
+            "version": "lts"
+        }
+    },
+    "postCreateCommand": "gem install bundler jekyll"
+}
