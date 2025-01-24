@@ -29,10 +29,22 @@ url: "https://joshua-p-williams.github.io" # the base hostname & protocol for yo
 twitter_username: jekyllrb
 github_username:  jekyll
 
+
+locale: "en-US" # See available languages in _data/sitetext.yml
+
+analytics:
+  google: #Google Analytics tracking code here
+
+collections:
+  portfolio:
+
+markdown: kramdown
+
 # Build settings
-theme: minima
-plugins:
-  - jekyll-feed
+#theme: minima
+
+#plugins:
+#  - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default.
