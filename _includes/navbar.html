@@ -6,11 +6,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="{{ '/' | relative_url }}">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ '/about/' | relative_url }}">About Us</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ '/services/' | relative_url }}">Services</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ '/team/' | relative_url }}">Team</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ '/contact/' | relative_url }}">Contact Us</a></li>
+                {% for link in site.data.navigation %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ link.url | relative_url}}">{{ link.title }}</a>
+                </li>
+                {% endfor %}                
             </ul>
         </div>
     </div>

@@ -105,3 +105,13 @@ footer p {
     padding: 5px;
     border-radius: 50%; /* Ensures a perfect circle */
 }
+
+/* Team Intro Section */
+.team-intro {
+    font-size: 1rem;
+    color: #495057; /* Muted dark gray */
+    margin-bottom: 2rem;
+}
+.team-intro p {
+    margin-bottom: 0.5rem;
+}
