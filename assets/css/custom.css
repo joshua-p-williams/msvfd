@@ -26,24 +26,59 @@ body {
 }
 
 /* Hero Section */
-.hero {
-    background: linear-gradient(to right, #007bff, #6c63ff);
-    color: #fff;
+/* Parallax Hero Section */
+.hero-section {
+    height: 70vh; /* Full viewport height */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Parallax effect */
+}
+
+
+/* Default image (large screens) */
+.hero-section {
+    background-image: url('/assets/images/firetruck-1920.jpg');
+}
+
+/* Medium screens */
+@media (max-width: 1280px) {
+    .hero-section {
+        background-image: url('/assets/images/firetruck-1280.jpg');
+    }
+}
+
+/* Small screens */
+@media (max-width: 768px) {
+    .hero-section {
+        background-image: url('/assets/images/firetruck-768.jpg');
+        background-attachment: scroll; /* Disable parallax on small screens for performance */
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+    .hero-section {
+        background-image: url('/assets/images/firetruck-480.jpg');
+        background-attachment: scroll; /* Disable parallax on extra small screens */
+    }
+}
+
+/* Center the Overlay */
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    padding: 20px;
+    border-radius: 10px;
     text-align: center;
-    padding: 4rem 0;
+    color: white;
+    max-width: 600px;
 }
-.hero h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-.hero p {
-    font-size: 1.25rem;
-}
-.hero .btn {
-    font-weight: 500;
-    border-radius: 50px;
-}
+
+
 
 /* Footer */
 footer {
