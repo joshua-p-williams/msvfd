@@ -1,0 +1,107 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Playfair+Display:wght@700&display=swap');
+
+/* Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+/* Navbar Styling */
+.bg-gradient-red {
+    background: linear-gradient(to right, #dc3545, #ff6347);
+}
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+}
+.nav-link {
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+.nav-link:hover {
+    color: #ffc107;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #007bff, #6c63ff);
+    color: #fff;
+    text-align: center;
+    padding: 4rem 0;
+}
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.hero p {
+    font-size: 1.25rem;
+}
+.hero .btn {
+    font-weight: 500;
+    border-radius: 50px;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    font-size: 0.875rem;
+}
+footer p {
+    margin: 0;
+}
+
+
+/* Cards */
+.card-title {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+.card-text {
+    color: #6c757d;
+}
+/* Card Styling */
+.card-title.text-danger {
+    color: #dc3545;
+}
+.card-title.text-primary {
+    color: #007bff;
+}
+.card-title.text-warning {
+    color: #ffc107;
+}
+.card-text {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+
+/* Team Card Styling */
+.team-card {
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px;
+}
+.team-card:hover {
+    transform: scale(1.05);
+}
+.team-card .card-title {
+    font-size: 1.25rem;
+    color: #dc3545; /* Red */
+}
+.team-card .card-text {
+    font-size: 0.9rem;
+    color: #6c757d; /* Muted text */
+}
+.team-card blockquote {
+    font-style: italic;
+    color: #007bff; /* Blue */
+}
+.team-card img {
+    border: 3px solid #dc3545; /* Red border around image */
+    padding: 5px;
+    border-radius: 50%; /* Ensures a perfect circle */
+}

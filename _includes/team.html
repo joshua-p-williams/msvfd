@@ -1,75 +1,22 @@
-<!-- Team -->
-{% if site.locale and site.locale != "" and site.locale != nil %}
-<section class="page-section" id="{{ site.data.sitetext[site.locale].team.section | default: "team" }}">
-<div class="container">
-  <div class="row">
-	<div class="col-lg-12 text-center">
-	  <h2 class="section-heading text-uppercase">{{ site.data.sitetext[site.locale].team.title }}</h2>
-	  <h3 class="section-subheading text-muted">{{ site.data.sitetext[site.locale].team.text }}</h3>
-	</div>
-  </div>
-  <div class="row d-flex justify-content-center">
-  {% for person in site.data.sitetext[site.locale].team.people %}
-	<div class="col-sm-4">
-	  <div class="team-member">
-		<img class="mx-auto rounded-circle" src="{{ person.image }}" alt="">
-		<h4>{{ person.name }}</h4>
-		<p class="text-muted">{{ person.role }}</p>
-		<ul class="list-inline social-buttons">
-		{% for network in person.social %}
-		  <li class="list-inline-item">
-			<a href="{{ network.url }}">
-			  <i class="{{ network.icon }}"></i>
-			</a>
-		  </li>
-		{% endfor %}
-		</ul>
-	  </div>
-	</div>
-  {% endfor %}
-  </div>
-  <div class="row">
-	<div class="col-lg-8 mx-auto text-center">
-	  <div class="large text-muted">{{ site.data.sitetext[site.locale].team.subtext | markdownify }}</div>
-	</div>
-  </div>
+<div class="container my-5">
+    <h1 class="text-center mb-4">Meet Our Team</h1>
+    <div class="row gy-4">
+        {% for member in site.team %}
+        <div class="col-md-4">
+            <div class="card team-card shadow-sm border-0">
+                <img src="{{ member.image }}" class="card-img-top rounded-circle mx-auto mt-3" alt="{{ member.name }}" style="width: 150px; height: 150px; object-fit: cover;">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">{{ member.name }}</h5>
+                    <p class="card-text text-muted">{{ member.rank }}</p>
+                    <p class="text-secondary mb-2"><strong>Badge:</strong> {{ member.badge_number }}</p>
+                    <p><strong>Specialties:</strong> {{ member.specialties }}</p>
+                    <p><strong>Years of Service:</strong> {{ member.years_of_service }}</p>
+                    <blockquote class="blockquote">
+                        <p class="mb-0">{{ member.quote }}</p>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
 </div>
-</section>
-{% else %}
-<section class="page-section" id="{{ site.data.sitetext.team.section | default: "team" }}">
-	<div class="container">
-	  <div class="row">
-		<div class="col-lg-12 text-center">
-		  <h2 class="section-heading text-uppercase">{{ site.data.sitetext.team.title }}</h2>
-		  <h3 class="section-subheading text-muted">{{ site.data.sitetext.team.text }}</h3>
-		</div>
-	  </div>
-	  <div class="row d-flex justify-content-center">
-	  {% for person in site.data.sitetext.team.people %}
-		<div class="col-sm-4">
-		  <div class="team-member">
-			<img class="mx-auto rounded-circle" src="{{ person.image }}" alt="">
-			<h4>{{ person.name }}</h4>
-			<p class="text-muted">{{ person.role }}</p>
-			<ul class="list-inline social-buttons">
-			{% for network in person.social %}
-			  <li class="list-inline-item">
-				<a href="{{ network.url }}">
-				  <i class="{{ network.icon }}"></i>
-				</a>
-			  </li>
-			{% endfor %}
-			</ul>
-		  </div>
-		</div>
-	  {% endfor %}
-	  </div>
-	  <div class="row">
-		<div class="col-lg-8 mx-auto text-center">
-		  <div class="large text-muted">{{ site.data.sitetext.team.subtext | markdownify }}</div>
-		</div>
-	  </div>
-	</div>
-</section>
-{% endif %}
-<!-- End Team -->
