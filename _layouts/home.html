@@ -1,13 +1,12 @@
 ---
 layout: default
 ---
+
+{% include hero.html %}
+
 <div class="container my-5">
 
-    {% include hero.html %}
-
-    <div class="team-intro">
-        {{ content }}
-    </div>
+    {{ content }}
 
     {% include services.html %}
 </div>

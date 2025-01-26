@@ -12,6 +12,29 @@
         </li>
         {% endfor %}                
       </ul>
+      <!-- Theme Picker Dropdown -->
+      <div class="dropdown">
+          <button class="btn btn-outline-light dropdown-toggle" type="button" id="themeDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-circle-half"></i>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="themeDropdown">
+              <li>
+                  <button class="dropdown-item" data-theme="light">
+                      <i class="bi bi-sun-fill"></i> Light
+                  </button>
+              </li>
+              <li>
+                  <button class="dropdown-item" data-theme="dark">
+                      <i class="bi bi-moon-fill"></i> Dark
+                  </button>
+              </li>
+              <li>
+                  <button class="dropdown-item active" data-theme="auto">
+                      <i class="bi bi-circle-half"></i> Auto
+                  </button>
+              </li>
+          </ul>
+      </div>
     </div>
   </div>
 </nav>
