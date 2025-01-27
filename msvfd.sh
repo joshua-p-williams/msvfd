@@ -58,10 +58,24 @@ function clean_site() {
     success "Jekyll cache and build artifacts cleaned."
 }
 
+function kill_port_4000() {
+    # Check for a process using port 4000
+    pid=$(lsof -t -i:4000)
+    
+    if [ -n "$pid" ]; then
+        echo "Port 4000 is in use by process $pid. Killing the process..."
+        kill -9 "$pid"
+        echo "Process $pid terminated."
+    else
+        echo "Port 4000 is not in use."
+    fi
+}
+
 function stop_server() {
     info "Stopping any running Jekyll server..."
     pkill -f "jekyll serve" || success "No Jekyll server was running."
     success "Stopped the Jekyll server if it was running."
+    kill_port_4000
 }
 
 function clear_all() {

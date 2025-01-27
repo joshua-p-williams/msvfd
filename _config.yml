@@ -21,30 +21,33 @@
 title: Mountain Springs Fire and Rescue
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "/msvfd" # the subpath of your site, e.g. /blog
-url: "https://joshua-p-williams.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+  Serving and protecting our community with dedication and care.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
-
-
-locale: "en-US" # See available languages in _data/sitetext.yml
-
-analytics:
-  google: #Google Analytics tracking code here
-
-collections:
-  portfolio:
-
-markdown: kramdown
 
 # Build settings
 #theme: minima
 
-#plugins:
-#  - jekyll-feed
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+collections:
+  services:
+    output: false # Don't generate individual service pages.
+    directory: _services
+  team:
+    output: false # Don't generate individual team member pages.
+    directory: _team
+  intros:
+    output: false # Don't generate individual intro pages.
+    directory: _intros
+  contacts:
+    output: false # Don't generate individual contact pages.
+    directory: _contacts
 
 # Exclude from processing.
 # The following items will not be processed, by default.

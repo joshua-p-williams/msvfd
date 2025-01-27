@@ -1,0 +1,40 @@
+<nav class="navbar navbar-expand-lg bg-primary scrolling-navbar" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="{{ '/' | relative_url }}">MSVFD</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav me-auto">
+        {% for link in site.data.navigation %}
+        <li class="nav-item">
+            <a class="nav-link" href="{{ link.url | relative_url}}">{{ link.title }}</a>
+        </li>
+        {% endfor %}                
+      </ul>
+      <!-- Theme Picker Dropdown -->
+      <div class="dropdown darkmode-toggle" id="darkModeToggle">
+          <button class="btn btn-outline-light dropdown-toggle" type="button" id="darkModeDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-circle-half"></i>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="darkModeDropdown">
+              <li>
+                  <button class="dropdown-item" data-theme="light">
+                      <i class="bi bi-sun-fill"></i> Light
+                  </button>
+              </li>
+              <li>
+                  <button class="dropdown-item" data-theme="dark">
+                      <i class="bi bi-moon-fill"></i> Dark
+                  </button>
+              </li>
+              <li>
+                  <button class="dropdown-item active" data-theme="auto">
+                      <i class="bi bi-circle-half"></i> Auto
+                  </button>
+              </li>
+          </ul>
+      </div>
+    </div>
+  </div>
+</nav>

@@ -1,12 +1,19 @@
 ---
 layout: default
 ---
-{% include navheader.html %}
 
-{% include services.html %}
-{% include portfolio_grid.html %}
-{% include about.html %}
-{% include timeline.html %}
-{% include team.html %}
-{% include clients.html %}
-{% include contact.html %}
+{% include hero.html %}
+
+<div class="container my-5">
+
+    {% assign intro = site.intros | where: "path", "_intros/welcome.md" | first %}
+    {% include intro.html intro=intro %}
+
+    {% include services.html %}
+
+    {{ content }}
+
+    {% assign contact = site.contacts | where: "path", "_contacts/main.md" | first %}
+    {% include contact.html contact=contact %}
+
+</div>

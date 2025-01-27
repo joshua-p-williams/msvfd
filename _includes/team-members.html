@@ -1,0 +1,19 @@
+<div class="row gy-4">
+    {% for member in site.team %}
+    <div class="col-md-4">
+        <div class="card team-card shadow border-0 animate__animated" data-animation="animate__fadeInUp" style="animation-delay: {{ forloop.index0 | times: 100 }}ms;">
+            <div class="card-body text-center">
+                <h4 class="card-title">{{ member.name }}</h4>
+                <h6 class="card-subtitle mb-2 text-muted">{{ member.rank }}</h6>
+                <img src="{{ member.image }}" class="card-img-top rounded-circle mx-auto mt-3" alt="{{ member.name }}" style="width: 150px; height: 150px; object-fit: cover;">
+                <p class="card-text"><strong>Badge:</strong> {{ member.badge_number }}</p>
+                <p class="card-text"><strong>Specialties:</strong> {{ member.specialties }}</p>
+                <p class="card-text"><strong>Years of Service:</strong> {{ member.years_of_service }}</p>
+                <blockquote class="blockquote">
+                    <p class="mb-0">{{ member.quote }}</p>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>

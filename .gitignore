@@ -3,8 +3,6 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
-*.gem
-.bundle
-Gemfile.lock
-unused
-bootstrap-reference.html
+.DS_Store
+/node_modules/
+/dist/
