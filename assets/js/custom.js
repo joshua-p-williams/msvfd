@@ -77,3 +77,29 @@ document.addEventListener("DOMContentLoaded", function () {
     // Observe each animated element
     animatedElements.forEach((element) => observer.observe(element));
 });
+
+
+/*
+* Scroll Animation Script
+* This script animates the navbar on scroll.
+* It hides the navbar when scrolling down and shows it when scrolling up.
+* The script is executed when the DOM content is fully loaded.
+*/
+document.addEventListener("DOMContentLoaded", function () {
+    let lastScrollTop = 0;
+    const navbar = document.querySelector(".scrolling-navbar");
+
+    window.addEventListener("scroll", function () {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > lastScrollTop) {
+            // Scrolling down
+            navbar.style.top = "-70px"; // Adjust height as needed
+        } else {
+            // Scrolling up
+            navbar.style.top = "0";
+        }
+
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Avoid negative values
+    });
+});
