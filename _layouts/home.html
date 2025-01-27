@@ -6,6 +6,9 @@ layout: default
 
 <div class="container my-5">
 
+    {% assign intro = site.intros | where: "path", "_intros/welcome.md" | first %}
+    {% include intro.html intro=intro %}
+
     {{ content }}
 
     {% include services.html %}

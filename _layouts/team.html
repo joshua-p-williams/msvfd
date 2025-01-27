@@ -2,7 +2,8 @@
 layout: default
 ---
 <div class="container my-5">
-    <h1 class="text-center mb-4">{{ page.title }}</h1>
+    {% assign intro = site.intros | where: "path", "_intros/team.md" | first %}
+    {% include intro.html intro=intro %}
 
     <div>
         {{ content }}

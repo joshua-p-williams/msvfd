@@ -42,6 +42,9 @@ collections:
   team:
     output: false # Don't generate individual team member pages.
     directory: _team
+  intros:
+    output: false # Don't generate individual intro pages.
+    directory: _intros
 
 # Exclude from processing.
 # The following items will not be processed, by default.
