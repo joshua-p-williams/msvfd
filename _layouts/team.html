@@ -1,13 +1,12 @@
 ---
 layout: default
 ---
+
 <div class="container my-5">
     {% assign intro = site.intros | where: "path", "_intros/team.md" | first %}
     {% include intro.html intro=intro %}
 
-    <div>
-        {{ content }}
-    </div>
+    {{ content }}
     
     <!-- Render Team Members -->
     <div class="team-members">

@@ -9,10 +9,11 @@ layout: default
     {% assign intro = site.intros | where: "path", "_intros/welcome.md" | first %}
     {% include intro.html intro=intro %}
 
-    {% assign contact = site.contacts | where: "path", "_contacts/main.md" | first %}
-    {% include contact.html contact=contact %}
+    {% include services.html %}
 
     {{ content }}
 
-    {% include services.html %}
+    {% assign contact = site.contacts | where: "path", "_contacts/main.md" | first %}
+    {% include contact.html contact=contact %}
+
 </div>

@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 /*
-* Scroll Animation Script
+* Navigation Scroll Animation Script
 * This script animates the navbar on scroll.
 * It hides the navbar when scrolling down and shows it when scrolling up.
 * The script is executed when the DOM content is fully loaded.

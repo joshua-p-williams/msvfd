@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<article class="container py-5">
+    <header class="mb-4">
+        <h1 class="text-primary">{{ page.title }}</h1>
+        <p class="text-muted">{{ page.date | date: "%B %d, %Y" }}</p>
+    </header>
+    <div class="post-content">
+        {{ content }}
+    </div>
+</article>

@@ -4,8 +4,6 @@ title: Home
 description: Mountain Springs Fire and Rescue is a dedicated volunteer fire department serving our community with pride. We provide emergency response, fire safety education, and community support. Join us, donate, or learn how we keep Mountain Springs safe.
 ---
 
-# Welcome to Mountain Springs Fire and Rescue
-
 ### Serving Our Community with Dedication and Pride
 
 Mountain Springs Fire and Rescue is a volunteer fire department committed to protecting lives, property, and the environment in our community. Our team of trained and dedicated volunteers stands ready to respond to emergencies, provide fire safety education, and support our neighbors when they need us most.
@@ -28,8 +26,6 @@ We strive to safeguard our community through excellence in service, rapid respon
 ### **Support Your Department**
 
 As a volunteer organization, we rely on the generosity of our community. Whether through volunteering your time or making a donation, your support helps us serve and protect.
-
-[Learn How You Can Help →](#)
 
 ---
 

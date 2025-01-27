@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row align-items-center">
             <!-- Contact Info -->
-            <div class="col-md-6 text-center text-md-start animate__animated animate__fadeInLeft">
+            <div class="col-md-6 text-center text-md-start animate__animated" data-animation="animate__zoomIn">
                 <h2 class="display-5 fw-bold text-primary">
                     {{ contact.title }}
                 </h2>
@@ -32,7 +32,7 @@
             </div>
             <!-- Map -->
             {% if contact.map %}
-            <div class="col-md-6 text-center animate__animated animate__fadeInRight">
+            <div class="col-md-6 text-center animate__animated" data-animation="animate__slideInUp">
                 <iframe 
                     src="{{ contact.map }}" 
                     width="100%" 
