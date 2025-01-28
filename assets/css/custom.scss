@@ -80,36 +80,6 @@
 }
 
 
-/* Apply Bootstrap styles to Markdown-rendered elements */
-h1, h2, h3, h4, h5, h6 {
-    color: var(--bs-primary); /* Matches Bootstrap's primary color */
-    font-weight: 700; /* Equivalent to fw-bold */
-    margin-top: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-p {
-    font-size: 1rem;
-    color: var(--bs-body-color); /* Default Bootstrap body text color */
-    line-height: 1.5;
-}
-
-a {
-    color: var(--bs-link-color);
-    text-decoration: underline;
-}
-
-ul, ol {
-    padding-left: 1.5rem;
-}
-
-blockquote {
-    font-size: 1.25rem;
-    color: var(--bs-secondary);
-    border-left: 5px solid var(--bs-primary);
-    padding-left: 1rem;
-    margin: 1.5rem 0;
-}
 
 
 /* Footer */
@@ -131,6 +101,9 @@ blockquote {
     transform: scale(1.2); /* Slight zoom on hover */
 }
 
+
+
+
 /* News Section */
 .news-section {
     background-color: var(--bs-light);
@@ -139,4 +112,73 @@ blockquote {
 
 .news-section h1 {
     font-weight: 700;
+}
+
+
+
+
+
+/* Apply Bootstrap styles to Markdown-rendered elements */
+.markdown-content {
+    padding: 1rem;
+}
+
+/* Headings */
+.markdown-content h1, 
+.markdown-content h2, 
+.markdown-content h3, 
+.markdown-content h4, 
+.markdown-content h5, 
+.markdown-content h6 {
+    color: var(--bs-primary);
+    font-weight: 700; /* Bold */
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    /*border-bottom: 2px solid var(--bs-primary); /* Adds emphasis */
+    padding-bottom: 0.5rem;
+}
+
+/* Paragraphs */
+.markdown-content p {
+    font-size: 1rem;
+    color: var(--bs-body-color); /* Dynamic text color for themes */
+    line-height: 1.5;
+}
+
+/* Links (styled as buttons) */
+.markdown-content a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    color: #fff; /* Ensure text is visible regardless of theme */
+    background-color: var(--bs-primary);
+    border-radius: 0.25rem;
+    text-decoration: none;
+    margin: 0.5rem 0;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Lists */
+.markdown-content ul, 
+.markdown-content ol {
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Blockquotes */
+.markdown-content blockquote {
+    font-size: 1.25rem;
+    color: var(--bs-secondary);
+    border-left: 5px solid var(--bs-primary);
+    padding-left: 1rem;
+    margin: 1.5rem 0;
+}
+
+/* Horizontal Rules */
+.markdown-content hr {
+    border: none;
+    height: 1px;
+    background-color: var(--bs-primary);
+    opacity: 0.6; /* Subtle look */
+    margin: 2rem 0;
 }

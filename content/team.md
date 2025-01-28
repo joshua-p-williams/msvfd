@@ -5,7 +5,5 @@ description: "Learn about the dedicated individuals who serve at Mountain Spring
 permalink: /team/
 ---
 
----
-
-# Team Members
+# Members
 

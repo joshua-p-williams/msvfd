@@ -6,7 +6,9 @@ layout: default
     {% assign contact = site.contacts | where: "path", "_contacts/main.md" | first %}
     {% include contact.html contact=contact %}
 
-    {{ content }}
-
+    <div class="markdown-content">
+        {{ content }}
+    </div>
+    
     {% include join-form.html %}
 </div>

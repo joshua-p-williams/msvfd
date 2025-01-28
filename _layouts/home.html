@@ -11,7 +11,9 @@ layout: default
 
     {% include services.html %}
 
-    {{ content }}
+    <div class="markdown-content">
+        {{ content }}
+    </div>
 
     {% assign contact = site.contacts | where: "path", "_contacts/main.md" | first %}
     {% include contact.html contact=contact %}

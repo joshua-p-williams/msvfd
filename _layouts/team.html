@@ -6,7 +6,9 @@ layout: default
     {% assign intro = site.intros | where: "path", "_intros/team.md" | first %}
     {% include intro.html intro=intro %}
 
-    {{ content }}
+    <div class="markdown-content">
+        {{ content }}
+    </div>
     
     <!-- Render Team Members -->
     <div class="team-members">
