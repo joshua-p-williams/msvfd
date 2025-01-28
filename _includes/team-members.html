@@ -5,7 +5,7 @@
             <div class="card-body text-center">
                 <h4 class="card-title">{{ member.name }}</h4>
                 <h6 class="card-subtitle mb-2 text-muted">{{ member.rank }}</h6>
-                <img src="{{ member.image }}" class="card-img-top rounded-circle mx-auto mt-3" alt="{{ member.name }}" style="width: 150px; height: 150px; object-fit: cover;">
+                <img src="{{ member.image | relative_url }}" class="card-img-top rounded-circle mx-auto mt-3" alt="{{ member.name }}" style="width: 150px; height: 150px; object-fit: cover;">
                 <p class="card-text"><strong>Badge:</strong> {{ member.badge_number }}</p>
                 <p class="card-text"><strong>Specialties:</strong> {{ member.specialties }}</p>
                 <p class="card-text"><strong>Years of Service:</strong> {{ member.years_of_service }}</p>

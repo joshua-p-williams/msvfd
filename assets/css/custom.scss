@@ -1,3 +1,6 @@
+---
+---
+
 /* Parallax Hero Section */
 .hero-section {
     height: 70vh; /* Full viewport height */
@@ -9,20 +12,20 @@
 
 /* Default image (large screens) */
 .hero-section {
-    background-image: url('/assets/images/firetruck-1920.jpg');
+    background-image: url('{{ "/assets/images/firetruck-1920.jpg" | relative_url }}');
 }
 
 /* Medium screens */
 @media (max-width: 1280px) {
     .hero-section {
-        background-image: url('/assets/images/firetruck-1280.jpg');
+        background-image: url('{{ "/assets/images/firetruck-1280.jpg" | relative_url }}');
     }
 }
 
 /* Small screens */
 @media (max-width: 768px) {
     .hero-section {
-        background-image: url('/assets/images/firetruck-768.jpg');
+        background-image: url('{{ "/assets/images/firetruck-768.jpg" | relative_url }}');
         background-attachment: scroll; /* Disable parallax on small screens for performance */
     }
 }
@@ -30,7 +33,7 @@
 /* Extra small screens */
 @media (max-width: 480px) {
     .hero-section {
-        background-image: url('/assets/images/firetruck-480.jpg');
+        background-image: url('{{ "/assets/images/firetruck-480.jpg" | relative_url }}');
         background-attachment: scroll; /* Disable parallax on extra small screens */
     }
 }

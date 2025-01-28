@@ -22,8 +22,8 @@ title: Mountain Springs Fire and Rescue
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Serving and protecting our community with dedication and care.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/msvfd" # the subpath of your site, e.g. /blog
+url: "https://joshua-p-williams.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 

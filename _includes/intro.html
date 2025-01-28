@@ -10,13 +10,13 @@
                     {{ intro.content | markdownify }}
                 </p>
                 {% if intro.cta_button %}
-                    <a href="{{ intro.cta_button.url }}" class="btn btn-primary btn-lg mt-3">{{ intro.cta_button.text }}</a>
+                    <a href="{{ intro.cta_button.url | relative_url }}" class="btn btn-primary btn-lg mt-3">{{ intro.cta_button.text }}</a>
                 {% endif %}
             </div>
             <!-- Image Content -->
             {% if intro.image %}
             <div class="col-md-6 text-center animate__animated" data-animation="animate__fadeInRight">
-                <img src="{{ intro.image }}" alt="Intro Image" class="img-fluid rounded-circle shadow">
+                <img src="{{ intro.image | relative_url }}" alt="Intro Image" class="img-fluid rounded-circle shadow">
             </div>
             {% endif %}
         </div>
