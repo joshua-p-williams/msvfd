@@ -1,0 +1,31 @@
+<section id="{{ timeline.section }}" class="timeline-section py-5">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="display-5 fw-bold text-primary">{{ timeline.title }}</h2>
+            <p class="lead text-muted">{{ timeline.text }}</p>
+        </div>
+        <div class="timeline mt-5">
+            {% for event in timeline.events %}
+            <div class="timeline-event d-flex {% cycle 'timeline-left', 'timeline-right' %} animate__animated" data-animation="animate__fadeInUp">
+                <!-- Image -->
+                {% if event.image %}
+                <div class="timeline-image">
+                    <img src="{{ event.image | relative_url }}" alt="{{ event.alt | default: event.title }}" class="rounded-circle img-fluid shadow">
+                </div>
+                {% endif %}
+                <!-- Content -->
+                <div class="timeline-content shadow-sm">
+                    <h4 class="timeline-title fw-bold text-primary">{{ event.year }}</h4>
+                    <h5 class="fw-bold">{{ event.title }}</h5>
+                    <p>{{ event.desc | markdownify }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% if timeline.end %}
+        <div class="text-center mt-5 animate__animated animate__fadeInUp">
+            <h3 class="fw-bold text-primary">{{ timeline.end | markdownify }}</h3>
+        </div>
+        {% endif %}
+    </div>
+</section>

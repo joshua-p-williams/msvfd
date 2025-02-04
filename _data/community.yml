@@ -1,0 +1,37 @@
+title: "Our Community Impact"
+description: "At Mountain Springs Fire & Rescue, we take pride in serving and protecting our community. Here are some of the ways we make a difference."
+
+stats:
+  - label: "Emergency Calls Responded To"
+    value: "500+"
+    icon: "bi-telephone-fill"
+
+  - label: "Fires Extinguished"
+    value: "120+"
+    icon: "bi-fire"
+
+  - label: "Medical Assists Provided"
+    value: "300+"
+    icon: "bi-heart-pulse"
+
+  - label: "Public Education Events"
+    value: "20+"
+    icon: "bi-person-check"
+
+achievements:
+  - title: "Grant Awarded for New Equipment"
+    year: "2023"
+    description: "We received a $50,000 grant for modern firefighting gear and medical equipment."
+
+  - title: "Community Fire Prevention Week"
+    year: "2022"
+    description: "Over 500 residents participated in fire safety training sessions and workshops."
+
+  - title: "Volunteer Growth"
+    year: "2021"
+    description: "Our department grew by 25% as more volunteers joined our ranks."
+
+  - title: "Life-Saving Response Recognition"
+    year: "2020"
+    description: "Recognized by the county for a critical rescue operation that saved multiple lives."
+

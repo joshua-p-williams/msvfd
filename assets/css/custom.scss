@@ -182,3 +182,82 @@
     opacity: 0.6; /* Subtle look */
     margin: 2rem 0;
 }
+
+
+
+
+/* Timeline Alternating Layout */
+.timeline {
+    position: relative;
+    padding: 2rem 0;
+}
+
+.timeline-event {
+    display: flex;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+
+.timeline-left .timeline-image {
+    order: 1;
+}
+
+.timeline-left .timeline-content {
+    order: 2;
+    text-align: left;
+}
+
+.timeline-right .timeline-image {
+    order: 2;
+}
+
+.timeline-right .timeline-content {
+    order: 1;
+    text-align: right;
+}
+
+.timeline-image {
+    flex: 0 0 120px;
+    width: 120px;
+    height: 120px;
+    margin: 0 1rem;
+}
+
+.timeline-image img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.timeline-content {
+    flex: 1;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.timeline-content h4 {
+    margin-bottom: 0.5rem;
+}
+
+.timeline-content p {
+    margin-bottom: 0;
+}
+
+/* Timeline Section */
+.timeline-event {
+    opacity: 0; /* Hidden initially */
+    transform: translateY(30px); /* Starts lower */
+    transition: all 0.6s ease-in-out;
+}
+
+.timeline-event.animate__fadeInUp {
+    opacity: 1 !important;
+    transform: translateY(0);
+}
+
+/* Hover Effect */
+.timeline-event:hover .timeline-content {
+    transform: scale(1.02);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}

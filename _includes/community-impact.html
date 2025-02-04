@@ -1,0 +1,36 @@
+<section class="community-impact-section py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="display-5 fw-bold text-primary">{{ site.data.community.title }}</h2>
+            <p class="lead text-muted">{{ site.data.community.description }}</p>
+        </div>
+
+        <!-- Impact Stats -->
+        <div class="row text-center mb-5">
+            {% for stat in site.data.community.stats %}
+            <div class="col-md-3 animate__animated animate__fadeInUp">
+                <div class="card border-0 shadow p-4">
+                    <i class="bi {{ stat.icon }} text-primary display-4"></i>
+                    <h4 class="fw-bold mt-3">{{ stat.value }}</h4>
+                    <p class="text-muted">{{ stat.label }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <!-- Achievements -->
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <h3 class="text-center text-primary fw-bold mb-4">Notable Achievements</h3>
+                <ul class="list-group list-group-flush">
+                    {% for achievement in site.data.community.achievements %}
+                    <li class="list-group-item animate__animated animate__fadeInLeft">
+                        <h5 class="fw-bold">{{ achievement.title }} <span class="text-muted">({{ achievement.year }})</span></h5>
+                        <p class="text-muted">{{ achievement.description }}</p>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

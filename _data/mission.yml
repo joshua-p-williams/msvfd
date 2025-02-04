@@ -1,0 +1,22 @@
+title: "Our Mission & Vision"
+description: "Mountain Springs Fire & Rescue is committed to protecting our community with professionalism, dedication, and integrity."
+
+statements:
+  - title: "Our Mission"
+    icon: "bi-shield-shaded text-primary"
+    text: "To serve and protect our community through **rapid emergency response, fire prevention, and public safety education**.  
+           We are dedicated to safeguarding lives, property, and the environment with **courage, professionalism, and integrity**."
+
+  - title: "Our Vision"
+    icon: "bi-lightbulb text-success"
+    text: "To be a **leading volunteer fire department** known for **innovation, preparedness, and community engagement**.  
+           We strive to **enhance fire safety, train the next generation of first responders, and foster a resilient community**."
+
+  - title: "Core Values"
+    icon: "bi-star text-warning"
+    text: |
+      - **Commitment**: We are dedicated to serving our community.
+      - **Integrity**: Honesty and transparency guide our decisions.
+      - **Bravery**: Every firefighter faces danger with courage.
+      - **Teamwork**: We succeed together as one department.
+      - **Excellence**: Striving to provide the best emergency services.
