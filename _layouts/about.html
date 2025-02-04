@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<div class="container my-5">
+    {% include mission-vision.html %}
+
+    {% include community-impact.html %}
+    
+    {% assign timeline = site.data.timeline %}
+    {% include timeline.html timeline=timeline %}
+
+    <div class="markdown-content">
+        {{ content }}
+    </div>
+</div>

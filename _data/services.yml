@@ -1,0 +1,37 @@
+title: "Our Services"
+description: "Mountain Springs Fire & Rescue provides a range of emergency response services, ensuring safety and rapid response in times of need."
+services:
+  - title: "Fire Suppression"
+    icon: "bi-fire text-danger"
+    description: "Our team is trained to handle fire emergencies quickly and effectively."
+    cta:
+      text: "Learn More"
+      url: "/services/fire-suppression"
+
+  - title: "Emergency Medical Response"
+    icon: "bi-heart-pulse text-primary"
+    description: "We provide rapid emergency medical assistance, ensuring critical care before transport."
+    cta:
+      text: "Medical Services"
+      url: "/services/medical-response"
+
+  - title: "Community Outreach"
+    icon: "bi-people text-success"
+    description: "We engage with the community to provide fire prevention education and safety awareness."
+    cta:
+      text: "See Events"
+      url: "/services/community-outreach"
+
+  - title: "Rescue Operations"
+    icon: "bi-life-preserver text-warning"
+    description: "Our rescue teams are trained for vehicle extrications, water rescues, and other emergencies."
+    cta:
+      text: "Rescue Details"
+      url: "/services/rescue"
+
+  - title: "Disaster Preparedness"
+    icon: "bi-lightning text-info"
+    description: "We help prepare our community for storms, fires, and other disasters."
+    cta:
+      text: "Get Prepared"
+      url: "/services/disaster-preparedness"

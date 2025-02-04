@@ -36,9 +36,6 @@ plugins:
   - jekyll-sitemap
 
 collections:
-  services:
-    output: false # Don't generate individual service pages.
-    directory: _services
   team:
     output: false # Don't generate individual team member pages.
     directory: _team

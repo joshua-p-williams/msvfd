@@ -1,0 +1,19 @@
+<section class="mission-vision-section py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="display-5 fw-bold text-primary">{{ site.data.mission.title }}</h2>
+            <p class="lead text-muted">{{ site.data.mission.description }}</p>
+        </div>
+        <div class="row text-center">
+            {% for item in site.data.mission.statements %}
+            <div class="col-md-4 animate__animated animate__fadeInUp" style="animation-delay: {{ forloop.index0 | times: 100 }}ms;">
+                <div class="card border-0 shadow p-4">
+                    <i class="bi {{ item.icon }} display-4"></i>
+                    <h3 class="text-primary fw-bold mt-3">{{ item.title }}</h3>
+                    <p class="lead text-muted">{{ item.text | markdownify }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

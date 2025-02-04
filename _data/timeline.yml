@@ -1,0 +1,41 @@
+title: "Our Journey Through Time"
+text: "Discover the milestones that shaped the legacy of Mountain Springs Fire & Rescue."
+section: timeline
+events:
+  - title: "Founding of Mountain Springs Fire & Rescue"
+    year: "2005"
+    desc: "A group of dedicated community members came together to establish the Mountain Springs Volunteer Fire Department, driven by a shared mission to protect lives and property."
+    image: assets/images/firetruck-480.jpg
+    alt: Founding of the department
+
+  - title: "First Fire Engine Acquired"
+    year: "2007"
+    desc: "Thanks to generous community donations, the department acquired its first fire engine, improving response times and enabling better firefighting capabilities."
+    image: assets/images/firetruck-480.jpg
+    alt: First fire engine acquired
+
+  - title: "Expanded Service Area"
+    year: "2012"
+    desc: "The department expanded its coverage area to include neighboring communities, ensuring fire and rescue services reached even more families in need."
+    image: assets/images/fire-department.png
+    alt: Firefighters responding to an emergency
+
+  - title: "Major Training Initiative Launched"
+    year: "2015"
+    desc: "With safety as a top priority, Mountain Springs implemented a rigorous training program, certifying members in advanced firefighting, rescue techniques, and emergency medical care."
+    image: assets/images/news-intro.png
+    alt: Firefighter training session
+
+  - title: "Community Outreach Program Begins"
+    year: "2019"
+    desc: "The department launched an ambitious outreach initiative, conducting fire safety education programs in schools and hosting open houses for residents to learn more about fire prevention."
+    image: assets/images/firetruck-480.jpg
+    alt: Community outreach and education
+
+  - title: "Celebrating 15 Years of Service"
+    year: "2020"
+    desc: "Mountain Springs Fire & Rescue celebrated its 15th anniversary, honoring the commitment of its volunteers and the unwavering support of the community."
+    image: assets/images/fire-department-team.png
+    alt: Celebrating 15 years of service
+
+end: "Join Us on Our Mission"
