@@ -1,4 +1,7 @@
-<div class="card border-0 shadow">
+<div class="card border-0 shadow animate__animated" data-animation="animate__fadeInUp">
+    {% if post.image %}
+    <img src="{{ post.image | relative_url }}" class="card-img-top post-image" alt="{{ post.title }}">
+    {% endif %}
     <div class="card-body">
         <h5 class="card-title text-primary">
             <a href="{{ post.url | relative_url }}" class="text-decoration-none">{{ post.title }}</a>

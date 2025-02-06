@@ -261,3 +261,23 @@
     transition: all 0.3s ease-in-out;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
+
+
+/* Ensure post images are consistently sized */
+.post-image {
+    max-height: 250px; /* Adjust this as needed */
+    object-fit: cover; /* Prevents image distortion */
+}
+
+/* Limit the height of hero images */
+.post-hero-image {
+    max-height: 400px; /* Adjust the height as needed */
+    object-fit: cover; /* Ensures the image scales nicely */
+    width: 100%; /* Ensures full responsiveness */
+}
+
+/* Limit the height of gallery images */
+.gallery-image {
+    max-height: 300px; /* Adjust the height as needed */
+    object-fit: cover; /* Ensures the image fills the space proportionally */
+}

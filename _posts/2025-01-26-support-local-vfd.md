@@ -3,6 +3,11 @@ layout: post
 title:  "Why You Should Support Your Local Volunteer Fire Department"
 date:   2025-01-26 03:43:49 +0000
 categories: community support
+image: /assets/images/firetruck-480.jpg
+gallery:
+  - /assets/images/news-intro.png
+  - /assets/images/fire-department.png
+  - /assets/images/fire-department-team.png
 ---
 
 When it comes to protecting your community, few organizations are as vital as your local **volunteer fire department**. These departments serve as the backbone of emergency response, staffed by courageous individuals who dedicate their time and skills to keeping you safe. However, they cannot do it alone—they need **your support**.
@@ -94,6 +99,3 @@ Your local volunteer fire department is there for you, 24/7. Whether it’s thro
 
 Together, we can make our community safer, stronger, and better prepared for whatever challenges come our way.
 
----
-
-*Interested in joining or supporting Mountain Springs Fire and Rescue? [Contact us](mailto:info@msvfd.org) or check out our [Join Us page](/join/) for more details.*

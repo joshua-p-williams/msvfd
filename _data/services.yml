@@ -6,32 +6,32 @@ services:
     description: "Our team is trained to handle fire emergencies quickly and effectively."
     cta:
       text: "Learn More"
-      url: "/services/fire-suppression"
+      url: "/fire/safety/2025/02/05/fire-suppression.html"
 
   - title: "Emergency Medical Response"
     icon: "bi-heart-pulse text-primary"
     description: "We provide rapid emergency medical assistance, ensuring critical care before transport."
     cta:
       text: "Medical Services"
-      url: "/services/medical-response"
+      url: "/emergency/response/2025/02/05/ems.html"
 
   - title: "Community Outreach"
     icon: "bi-people text-success"
     description: "We engage with the community to provide fire prevention education and safety awareness."
     cta:
-      text: "See Events"
-      url: "/services/community-outreach"
+      text: "Details"
+      url: "/community/outreach/2025/02/05/community-outreach.html"
 
   - title: "Rescue Operations"
     icon: "bi-life-preserver text-warning"
     description: "Our rescue teams are trained for vehicle extrications, water rescues, and other emergencies."
     cta:
       text: "Rescue Details"
-      url: "/services/rescue"
+      url: "/rescue/operations/2025/02/05/rescue-operations.html"
 
   - title: "Disaster Preparedness"
     icon: "bi-lightning text-info"
     description: "We help prepare our community for storms, fires, and other disasters."
     cta:
       text: "Get Prepared"
-      url: "/services/disaster-preparedness"
+      url: "/disaster/preparedness/2025/02/05/disaster-preparedness.html"
