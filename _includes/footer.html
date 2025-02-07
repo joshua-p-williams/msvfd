@@ -1,12 +1,20 @@
 <footer class="footer bg-dark text-white py-3">
     <div class="container text-center">
         <p class="mb-2">&copy; {{ site.title }} {{ site.time | date: '%Y' }}</p>
-        <a href="https://www.facebook.com/MountainSpringsVolunteerFireRescue/" target="_blank" class="text-white me-3">
+        
+        <a href="https://www.facebook.com/MountainSpringsVolunteerFireRescue/" target="_blank" class="text-white me-3 text-decoration-none">
             <i class="bi bi-facebook" style="font-size: 1.5rem;"></i>
         </a>
-        <a href="mailto:info@msvfd.org" class="text-white">
+        <a href="mailto:info@msvfd.org" class="text-white me-3 text-decoration-none">
             <i class="bi bi-envelope" style="font-size: 1.5rem;"></i>
         </a>
+        <a href="{{ '/feed.xml' | relative_url }}" class="text-white me-3 text-decoration-none" title="RSS Feed">
+            <i class="bi bi-rss" style="font-size: 1.5rem;"></i>
+        </a>
+        <a href="{{ '/sitemap.xml' | relative_url }}" class="text-white text-decoration-none" title="Sitemap">
+            <i class="bi bi-map" style="font-size: 1.5rem;"></i>
+        </a>
+
         <p class="mt-2 small">Proudly serving Cabot and Austin, Arkansas.</p>
     </div>
 </footer>

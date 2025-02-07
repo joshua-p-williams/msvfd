@@ -6,7 +6,21 @@ layout: default
     {% include mission-vision.html %}
 
     {% include community-impact.html %}
-    
+
+    <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold text-primary">Our Stations</h2>
+    </div>
+
+    <!-- Contact for Station 1 -->
+    {% assign contact_title="Station 1" %}
+    {% include contact.html %}
+
+
+    <!-- Contact for Station 1 -->
+    {% assign contact_title="Station 2" %}
+    {% include contact.html %}
+
+
     {% assign timeline = site.data.timeline %}
     {% include timeline.html timeline=timeline %}
 

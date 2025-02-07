@@ -15,7 +15,7 @@ layout: default
         {{ content }}
     </div>
 
-    {% assign contact = site.contacts | where: "path", "_contacts/main.md" | first %}
-    {% include contact.html contact=contact %}
+    {% assign contact_title="Contact Us" %}
+    {% include contact.html %}
 
 </div>
