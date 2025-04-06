@@ -3,39 +3,33 @@ text: "Discover the milestones that shaped the legacy of Mountain Springs Fire &
 section: timeline
 events:
   - title: "Founding of Mountain Springs Fire & Rescue"
-    year: "2005"
+    year: "1986"
     desc: "A group of dedicated community members came together to establish the Mountain Springs Volunteer Fire Department, driven by a shared mission to protect lives and property."
     image: assets/images/firetruck-480.jpg
     alt: Founding of the department
 
-  - title: "First Fire Engine Acquired"
-    year: "2007"
-    desc: "Thanks to generous community donations, the department acquired its first fire engine, improving response times and enabling better firefighting capabilities."
+  - title: "First New Engine Purchase"
+    year: "2006"
+    desc: "In 2006, Mountain Springs purchased its first brand new fire engine, a 2006 Rosenbauer pumper. This marked a major investment in the future of the department and greatly improved our ability to protect the community with modern equipment."
     image: assets/images/firetruck-480.jpg
-    alt: First fire engine acquired
+    alt: Rosenbauer
 
-  - title: "Expanded Service Area"
-    year: "2012"
-    desc: "The department expanded its coverage area to include neighboring communities, ensuring fire and rescue services reached even more families in need."
+  - title: "Station 2"
+    year: "2008"
+    desc: "To meet the needs of a growing community and department, Mountain Springs Volunteer Fire-Rescue built Station 2 in 2008. Located at 6225 Arkansas Highway 319 in Austin, this modern facility became our main office and training center. It houses multiple fire engines, a brush truck, and a rescue truck, and serves as a hub for firefighter education, community outreach, and department operations."
     image: assets/images/fire-department.png
-    alt: Firefighters responding to an emergency
+    alt: Station 2
 
-  - title: "Major Training Initiative Launched"
-    year: "2015"
-    desc: "With safety as a top priority, Mountain Springs implemented a rigorous training program, certifying members in advanced firefighting, rescue techniques, and emergency medical care."
+  - title: "Addition of Ferrara Engine"
+    year: "2016"
+    desc: "In 2016, Mountain Springs Volunteer Fire-Rescue purchased a 1998 Ferrara engine to strengthen our firefighting capabilities and support growing response needs in our community."
     image: assets/images/news-intro.png
-    alt: Firefighter training session
+    alt: Addition of Ferrara Engine
 
-  - title: "Community Outreach Program Begins"
-    year: "2019"
-    desc: "The department launched an ambitious outreach initiative, conducting fire safety education programs in schools and hosting open houses for residents to learn more about fire prevention."
-    image: assets/images/firetruck-480.jpg
-    alt: Community outreach and education
-
-  - title: "Celebrating 15 Years of Service"
+  - title: "Fleet Expansion and Modernization"
     year: "2020"
-    desc: "Mountain Springs Fire & Rescue celebrated its 15th anniversary, honoring the commitment of its volunteers and the unwavering support of the community."
-    image: assets/images/fire-department-team.png
-    alt: Celebrating 15 years of service
+    desc: "In 2020, Mountain Springs Volunteer Fire-Rescue expanded its fleet with the addition of a 2005 Marlon Spartan engine, a 2020 Ford F-250 Chiefs Truck, and a 2020 Ford F-250 designated as Rescue 2. The Chiefs Truck was added to allow the fire chief to respond directly to emergency scenes ahead of larger apparatus, enabling him to act as the first, first responder. Rescue 2 was outfitted for extrication and medical response and includes a small tank with foam to support firefighting and rescue operations."
+    image: assets/images/firetruck-480.jpg
+    alt: Fleet Expansion and Modernization
 
 end: "Join Us on Our Mission"
