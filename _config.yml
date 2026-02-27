@@ -19,13 +19,13 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Mountain Springs Fire and Rescue
-email: your-email@example.com
+email: contact@mountainspringsvfd.com
 description: >- # this means to ignore newlines until "baseurl:"
   Serving and protecting our community with dedication and care.
-baseurl: "/msvfd" # the subpath of your site, e.g. /blog
-url: "https://joshua-p-williams.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+baseurl: "" # Leave empty for custom domain
+url: "https://mountainspringsvfd.com" # Your custom domain
+# twitter_username: your_twitter_handle
+github_username: joshua-p-williams
 
 # Build settings
 #theme: minima
