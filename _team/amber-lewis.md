@@ -1,0 +1,9 @@
+---
+name: Amber Lewis
+rank: Lieutenant
+badge_number: 114
+specialties: Emergency Medical Services, Fire Suppression
+years_of_service: 1
+quote: ""
+image: https://thispersondoesnotexist.com/
+---

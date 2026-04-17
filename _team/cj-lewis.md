@@ -1,0 +1,9 @@
+---
+name: C.J. Long
+rank: Firefighter
+badge_number: 130
+specialties: Emergency Medical Services, Fire Suppression
+years_of_service: 1
+quote: ""
+image: https://thispersondoesnotexist.com/
+---
