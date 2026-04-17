@@ -5,5 +5,5 @@ badge_number: 111
 specialties: Emergency Medical Services, Fire Suppression
 years_of_service: 18
 quote: ""
-image: https://thispersondoesnotexist.com/
+image: /assets/images/people/andrew.jpg
 ---

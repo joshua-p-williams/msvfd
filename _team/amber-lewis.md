@@ -5,5 +5,5 @@ badge_number: 114
 specialties: Emergency Medical Services, Fire Suppression
 years_of_service: 1
 quote: ""
-image: https://thispersondoesnotexist.com/
+image: /assets/images/people/female-firefighter-avatar.png
 ---
