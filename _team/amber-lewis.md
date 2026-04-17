@@ -1,6 +1,6 @@
 ---
 name: Amber Lewis
-rank: Lieutenant
+rank: Firefighter
 badge_number: 114
 specialties: Emergency Medical Services, Fire Suppression
 years_of_service: 1
