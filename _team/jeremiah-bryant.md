@@ -5,5 +5,5 @@ badge_number: 138
 specialties: Emergency Medical Services, Fire Suppression
 years_of_service: 15
 quote: "Don't be stupid"
-image: https://thispersondoesnotexist.com/
+image: /assets/images/people/male-firefighter-avatar.png
 ---
