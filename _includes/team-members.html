@@ -1,5 +1,6 @@
 <div class="row gy-4">
-    {% for member in site.team %}
+    {% assign active_members = site.team | where: "active", true %}
+    {% for member in active_members %}
     <div class="col-md-4">
         <div class="card team-card shadow border-0 animate__animated" data-animation="animate__fadeInUp" style="animation-delay: {{ forloop.index0 | times: 100 }}ms;">
             <div class="card-body text-center">
@@ -8,7 +9,12 @@
                 <img src="{{ member.image | relative_url }}" class="card-img-top rounded-circle mx-auto mt-3" alt="{{ member.name }}" style="width: 150px; height: 150px; object-fit: cover;">
                 <p class="card-text"><strong>Badge:</strong> {{ member.badge_number }}</p>
                 <p class="card-text"><strong>Specialties:</strong> {{ member.specialties }}</p>
-                <p class="card-text"><strong>Years of Service:</strong> {{ member.years_of_service }}</p>
+                {% assign start_date = member.start_of_service | date: '%s' %}
+                {% assign now = 'now' | date: '%s' %}
+                {% assign seconds = now | minus: start_date %}
+                {% assign years = seconds | divided_by: 31556952 %}
+                {% assign months = seconds | modulo: 31556952 | divided_by: 2629746 %}
+                <p class="card-text"><strong>Years of Service:</strong> {{ years }} year{% if years != 1 %}s{% endif %}{% if months > 0 %} {{ months }} month{% if months != 1 %}s{% endif %}{% endif %}</p>
                 <blockquote class="blockquote">
                     <p class="mb-0">{{ member.quote }}</p>
                 </blockquote>
