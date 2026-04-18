@@ -6,4 +6,5 @@ specialties: Emergency Medical Services, Fire Suppression
 years_of_service: 1
 quote: ""
 image: /assets/images/people/traci.jpg
+active: true
 ---

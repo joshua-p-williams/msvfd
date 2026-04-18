@@ -1,9 +1,10 @@
 ---
-name: Andy Mummert
+name: Tanner Barnes
 rank: Firefighter
-badge_number: 139
+badge_number: 134
 specialties: Emergency Medical Services, Fire Suppression
-years_of_service: 17
+years_of_service: 2
 quote: ""
 image: /assets/images/people/male-firefighter-avatar.png
+active: false
 ---

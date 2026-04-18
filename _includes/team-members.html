@@ -1,5 +1,6 @@
 <div class="row gy-4">
-    {% for member in site.team %}
+    {% assign active_members = site.team | where: "active", true %}
+    {% for member in active_members %}
     <div class="col-md-4">
         <div class="card team-card shadow border-0 animate__animated" data-animation="animate__fadeInUp" style="animation-delay: {{ forloop.index0 | times: 100 }}ms;">
             <div class="card-body text-center">
